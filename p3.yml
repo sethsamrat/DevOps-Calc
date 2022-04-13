@@ -4,11 +4,11 @@
   tasks:
     - name: Pull image
       docker_image:
-        name: himankjn/check
+        name: sethsamrat/calcimage
         source: pull
     - name: deploy docker container
       docker_container:
-        image: himankjn/check
+        image: sethsamrat/calcimage
         name: container2
         state: started
         ports:
